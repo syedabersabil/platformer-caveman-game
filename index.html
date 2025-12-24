@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caveman Platformer - SDL Inspired</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <canvas id="gameCanvas"></canvas>
+        <div class="hud">
+            <div class="hud-item">Lives: <span id="lives">3</span></div>
+            <div class="hud-item">Score: <span id="score">0</span></div>
+            <div class="hud-item">Level: <span id="level">1</span></div>
+        </div>
+        <div id="instructions" class="instructions">
+            <h3>Controls</h3>
+            <p>Arrow Keys: Move</p>
+            <p>Space: Jump</p>
+            <p>Shift: Run</p>
+            <p>Collect coins, avoid enemies!</p>
+        </div>
+    </div>
+
+    <!-- Core Systems -->
+    <script src="js/Vector2D.js"></script>
+    <script src="js/Camera.js"></script>
+    <script src="js/TileMap.js"></script>
+    <script src="js/CollisionManager.js"></script>
+    
+    <!-- Game Objects -->
+    <script src="js/GameObject.js"></script>
+    <script src="js/PlatformerObject.js"></script>
+    <script src="js/Player.js"></script>
+    <script src="js/Enemy.js"></script>
+    <script src="js/Coin.js"></script>
+    
+    <!-- Main Game -->
+    <script src="js/Game.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
